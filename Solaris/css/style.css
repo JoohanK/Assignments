@@ -1,0 +1,247 @@
+/* Nollställer standard css */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Styling och position på planeterna och solen */
+body {
+    display: flex;
+    background: linear-gradient(to right, rgb(39, 16, 63), rgb(0, 0, 0));
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.2; 
+    position: relative;
+}
+
+
+
+
+/* Solsystemet solaris styling och position */
+header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    color: goldenrod;
+    margin: 100px;
+    font-size: 20px;
+    text-shadow: 0px 0px 20px red
+}
+
+/* min planeter och solen, skall ligga i linje */
+main {
+    display: flex;
+    align-items: center;
+}
+
+/* Placera behållaren längst till vänster */
+/* Fast position så man bara ser lite av */
+.sun-container {
+    position: absolute;
+    left: -500px; 
+}
+
+/* Styling på solen, storlek, färg, glödhet, form */
+.sun {
+    width: 600px;
+    height: 1000px;
+    background-color: rgb(255, 204, 0);
+    border-radius: 50%;
+    box-shadow: 20px 0px 20px rgba(255, 111, 0, 0.5);
+
+}
+/* Styling för samtliga planeter*/
+.planet {
+    margin: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ /* Styling för varje planet enskilt */
+.planet.mercury {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(184, 170, 170);
+    
+    
+}
+
+.planet.venus {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(235, 231, 225);
+    
+   
+}
+
+.planet.jorden {
+    width: 40px;
+    height: 40px;
+    background-color: #3770b4; 
+    
+}
+
+.planet.mars {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 89, 0);
+    
+}
+
+.planet.jupiter {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(211, 136, 82);
+    margin-right: 50px;
+
+}
+.planet.saturnus {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(203, 161, 83);
+    margin-right: 50px;
+    transform: rotate(145deg);
+}
+
+.planet.saturnus::before
+ {
+    content: "";
+    position: absolute;
+    width: 180px; /* Längd på ringen */
+    height: 3px; /* bredd på ringen */
+    background-color: #ccc; 
+    border-radius: 50%;
+    top: 50%; /* Placera ringen horisontellt i mitten av Saturnus */
+    left: -30px; /* Justera positionen till vänster om Saturnus */
+}
+
+
+
+
+.planet.uranus {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(159, 185, 213);
+    
+    margin-right: 50px;
+}
+.planet.neptunus {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(111, 166, 189);
+    
+    margin-right: 50px;
+}
+
+
+/*Styling och position av hela sidan när man tryckt in på en planet*/
+.planet-info-overlay{
+    display: none; /*Visas inte förens man trycker på en planet*/
+    flex-direction: column;/*Stängknappen skall ligga under faktarutan*/
+    align-items: center;
+    justify-content: center;
+    position: fixed;/*För att ligga över planeten*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+  
+    
+
+}
+
+/*Styling, storlek och position av faktarutan*/
+.planet-info {
+    background-color: rgba(41, 10, 221, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/*Styling av min stängknapp*/
+#close-info {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/*******************************************************/
+
+/*Styling av min data*/
+#planet-name {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+   
+  }
+
+#latin-name {
+    color: goldenrod;
+    font-size: 50px;
+  }
+
+#description {
+  
+    font-size: 17px;
+    color: white;
+   
+  }
+
+
+#random-info {
+    border-top: solid 1px goldenrod;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /*Använder för att wrapa min data till en ny rad när den inte får plats på en*/
+    justify-content: space-between;
+  }
+
+  /*Stylar alla barnen till random-info och fixar positionen/storleken som dom skall ta upp*/
+#random-info > * {
+    flex-basis: calc(50% - 20%);
+    margin: 40px;
+}
+
+
+#moons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    border-top: solid 1px goldenrod;
+    padding: 20px;
+  }
+
+/*Lägger en design på min stjärnor som skapades när jag trycker på en planet*/
+.star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle 2s linear infinite; /*Gör att stjärnorna blinkar*/
+}
+
+/*Testar att använda en ny effekt som gör att mina stjärnor blinkar*/
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
