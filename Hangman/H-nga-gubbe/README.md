@@ -1,4 +1,5 @@
-# H-nga-gubbe
+# HANGMAN
+
 Johan Kristensson
 Frida Carlson
 Sam Pankhurst
