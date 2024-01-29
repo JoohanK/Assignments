@@ -1,0 +1,46 @@
+#visual-timer-section {
+	width: 23.4375rem;
+	height: 41.6875rem;
+	display: none;
+	border-radius: 0.5rem;
+	background-color: $visualOrange;
+
+	.dropdown-button{
+		background-color: transparent;
+		border: none;
+		z-index: 2;
+		width: fit-content;
+		height: fit-content;
+		margin: 1rem
+	}
+	
+	.stop-button {
+				@include abortButton(transparent);
+				position: sticky;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				align-self: flex-end;
+				margin-left: 3.5rem;
+				margin-right: auto;
+				margin-bottom:3rem ;
+				justify-self: center;
+			  }
+			
+			  .stop-button:hover {
+				background-color: #FFF;
+				color: #d74444;
+				cursor: pointer;
+			  }
+			
+			  
+			  #visual-timer {
+				  align-self: start;
+				  position: absolute;
+				  width: 23.4375rem;
+				  max-height:  41.6875rem;
+				  background-color: rgb(0, 0, 0);
+				  border-radius: 0.5rem;
+			  }
+}
+

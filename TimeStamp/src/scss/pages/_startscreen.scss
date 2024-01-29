@@ -1,0 +1,23 @@
+.start-page {
+  display: flex;
+  background-color: black;
+  width: 375px;
+  height: 667px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  animation-name: slideinleft;
+  animation-duration: 2.15s;
+
+    
+  img {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@include slideAnimation;
+
+
+  

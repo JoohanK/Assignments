@@ -1,0 +1,49 @@
+@import '../abstract/colors';
+
+.show {
+	display: none;
+}
+
+.dropdown-menu {
+    background-color: $dropdownMenuBlack;
+    width: 23.4375rem;
+    height: 41.6875rem;
+    border-radius: 0.5rem;
+    .menu-hidden {
+        width: 23.4375rem;
+		height: 41.6875rem;
+        display: flex;
+        flex-direction: column;
+		justify-content: center;
+		align-items: center;
+        padding: 1rem;
+		position: relative;
+        button {
+			background: transparent;
+			border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            width: 15em;
+            height: 2rem;
+            margin: 1rem;
+			color: white;
+			text-align: center;
+			font-family: $primaryFont;
+			font-size: 1.5rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.15rem;
+			text-transform: uppercase;
+        }
+		.setTimerBtn {
+			@include menuIcon();
+			width: 2rem;
+			height: 2rem;
+			padding: 0;
+			margin: 0;
+		}
+    }
+}
