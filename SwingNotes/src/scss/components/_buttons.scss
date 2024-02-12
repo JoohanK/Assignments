@@ -1,0 +1,34 @@
+@import "../abstract/colors";
+
+button {
+    padding: 10px;
+    background-color: $primaryGreen;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hoverOnGreen;
+    }
+}
+
+#abortButton {
+    background-color: $primaryDelete;
+
+    &:hover {
+        background-color: $hoverOnRed;
+    }
+}
+
+.action-button-update {
+    margin-right: 0.3rem; 
+}
+
+.action-button-delete {
+    background-color: $primaryDelete;
+
+    &:hover {
+        background-color: $hoverOnRed;
+    }
+}

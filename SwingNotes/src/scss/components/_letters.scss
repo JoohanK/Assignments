@@ -1,0 +1,9 @@
+@import "../abstract/fonts";
+
+@include applyFontFamily($primaryFont);
+
+.small-note-text {
+    font-family: cursive;
+    font-style: italic;
+}
+

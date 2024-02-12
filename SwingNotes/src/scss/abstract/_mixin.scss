@@ -1,0 +1,25 @@
+@mixin slideAnimation(){
+
+	@keyframes slideinleft {
+		from {
+		  opacity: 0;
+		  transform: translateX(-100%);
+		}
+		50% {
+		}
+		to {
+		  opacity: 1;
+		  transform: translateX(0%);
+		}
+	  }
+}
+
+@mixin applyFontFamily($fontFamily) {
+    label,
+    h2,
+    p,
+    button,
+    ::placeholder {
+        font-family: $fontFamily;
+    }
+}

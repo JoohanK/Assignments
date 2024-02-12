@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anteckningshantering</title>
+  <link rel="stylesheet" href="./src/scss/styles.scss">
+</head>
+
+<body>
+ 
+  <div class="container">
+    
+    <div class="left-section">
+      <h2>Senaste 4 anteckningar<br><br></h2>
+      <div id="recentNotes" class="recent-notes">
+      
+      </div>
+    </div>
+
+    <div class="right-section">
+      <h2>Ny anteckning<br><br></h2>
+      <label for="title">Titel:</label>
+      <input type="text" id="title" placeholder="Ange titel">
+      <label for="newNote">Anteckning:</label>
+      <textarea id="newNote" placeholder="Skriv din anteckning här"></textarea>
+      
+  
+
+      <label for="usernameInput">Användarnamn:</label>
+      <input type="text" id="usernameInput" placeholder="Ange ditt användarnamn">
+
+      <button id="publishButton">Publicera</button>
+      <button id="historyButton">Historik</button>
+    </div>
+  </div>
+  
+  <div id="overlay" class="hidden"></div>
+
+  <div id="popup" class="hidden-section hidden">
+   
+    <input type="text" id="updateNoteId" placeholder="Ange anteckningens ID">
+    <label for="updatedNote">Uppdatera anteckning:</label>
+    <textarea id="updatedNote" placeholder="Skriv ny anteckning här"></textarea>
+    <button id="updateButton">Uppdatera Anteckning</button>
+    <button id="abortButton">Avbryt</button>
+  </div>
+
+  <script type="module" src="./src/main.ts"></script>
+
+</body>
+
+</html>

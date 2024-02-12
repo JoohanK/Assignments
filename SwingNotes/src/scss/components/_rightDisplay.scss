@@ -1,0 +1,19 @@
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: $noteWhite;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.right-section {
+    width: 50%;
+    padding-left: 3rem;
+
+    #newNote {
+        height: 15rem;
+        resize: none;
+    }
+}
