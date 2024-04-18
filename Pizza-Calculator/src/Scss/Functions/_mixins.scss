@@ -1,0 +1,40 @@
+
+@mixin displayFlexAll($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+@mixin displayFlexContent($direction, $content){
+    display: flex;
+    justify-content: $content;
+    align-items: center;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+@mixin displayFlexStandard(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin displayFlex($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin font($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin border($radius: 10px, $border: 2px solid $black){
+    border-radius: $radius;
+    border: $border;
+}

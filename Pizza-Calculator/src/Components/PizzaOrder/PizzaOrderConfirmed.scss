@@ -1,0 +1,40 @@
+//Ordered
+.ordered {
+    .btn-order {
+      background-color: $dark-green;
+      border: 2px solid $black;
+      margin: 100px 50px 0px 50px;
+    }
+    .btn-order:hover {
+      background-color: $green;
+    }
+  }
+  .dialog {
+    border: 2px solid $green;
+    background-color: $black;
+    color: $white;
+    padding: 110px;
+  
+    .action-btn {
+      background-color: $pink;
+      color: $white;
+    }
+  
+    .action-btn:hover {
+      background-color: $green;
+    }
+  }
+  
+  //No ordered
+  .no-order {
+    @include displayFlexAll(column);
+    margin-left: 1.3em;
+  
+    
+    .text {
+      color: $dark-green;
+      padding: 80px 50px;
+      border: 2px solid $green;
+    }
+  }
+  

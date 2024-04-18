@@ -1,0 +1,61 @@
+//PizzaListItem
+.pizza-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $pink;
+  padding: 30px;
+  margin: 20px 20px;
+  background-color: $white;
+  font-size: $third-font-size;
+
+  .pizza-name {
+    flex-basis: 50%;
+  }
+
+  .pizza-remove {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+  }
+
+  .pizza-remove-btn,
+  .pizza-add-btn {
+    padding: 0 10px;
+    border: 2px solid $green;
+    cursor: pointer;
+  }
+
+  .pizza-add-btn {
+    margin-right: 20px;
+  }
+
+  .pizza-remove-btn:hover {
+    background-color: $green;
+    color: $white;
+  }
+
+  .pizza-add-btn:hover {
+    background-color: $green;
+    color: $white;
+  }
+
+  .pizza-quantity {
+    font-size: $third-font-size;
+    margin: 0 15px;
+  }
+
+  .pizza-totalprice {
+    flex-basis: 40%;
+  }
+  .delete-btn {
+    background-color:$dark-pink;
+    color: $white;
+    width: 5em;
+    padding: 2px;
+    margin-left: 1em;
+    cursor: pointer;
+  }  
+}
+
+

@@ -1,0 +1,29 @@
+.sort-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40vw;
+  min-width: 20rem;
+  min-height: 10rem;
+  padding: $first-padding;
+  background-color: $light-pink;
+  border-top: 2px solid $pink;
+  border-bottom: 2px solid $pink;
+  h3 {
+    text-align: center;
+  }
+  .selected {
+    border: solid 2px $green;
+    border-radius: 10%;
+  }
+  img {
+    max-width: 5rem;
+    max-height: 5rem;
+    border-radius: 10%;
+    border: solid 2px $pink;
+    &:hover {
+      border: solid 2px $green;
+      cursor: pointer;
+    }
+  }
+}

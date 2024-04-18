@@ -1,0 +1,16 @@
+@import "./Functions/mixins";
+@import "./Variables/colors";
+@import "./Variables/fonts";
+@import "./Variables/margin-padding";
+@import "./Base/base";
+
+@import "../Pages/order-style";
+
+@import "./../Components/Loggo/loggo";
+@import "./../Components/Header/header";
+@import "./../Components/PizzaOrder/pizzaOrder";
+@import "./../Components/PizzaOrder/PizzaOrderConfirmed.scss";
+@import "./../Components/PizzaOrder/pizzaListItem";
+@import "./../Components/ShoppingCartButton/shoppincartbutton.scss";
+@import "../Components/SortMenu/sortMenu";
+@import "../Components/Menu/menu";
