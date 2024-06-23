@@ -1,25 +1,22 @@
-Johan Kristensson 
+# SwingNotes | JohanK
+## Notes Application
 
-SwingNotes
-Antecknings app
+This is a simple web application for creating, viewing, and managing notes.
 
-Detta är en enkel webbapplikation för att skapa, visa och hantera anteckningar.
+### Features:
 
-Funktioner:
-* Skapa anteckningar: Användare kan skapa nya anteckningar genom att 
-fylla i formuläret med användarnamn, titel och själva anteckningen.
+Create Notes: Users can create new notes by filling out a form with their username, title, and the note content.
 
-* Visa senaste anteckningarna: De senaste fyra anteckningarna visas på startsidan.
+View Latest Notes: The latest four notes are displayed on the homepage.
 
-* Uppdatera och ta bort anteckningar: Användare kan uppdatera och ta bort befintliga anteckningar.
+Update and Delete Notes: Users can update and delete existing notes.
 
+### Installation:
 
-Installation:
-1. Klona projektet till din lokala maskin med git clone https://github.com/din-användare/notiser-applikation.git
-2. Navigera till projektmappen med cd notiser-applikation
-3. Installera beroenden med npm install
+Clone the project to your local machine with git clone https://github.com/your-username/notes-application.git
+Navigate to the project folder with cd notes-application
+Install dependencies with npm install
 
-Användning:
-1. Starta applikationen genom att köra npm run dev
-2. Gå till http://localhost:5173/ i din webbläsare för att använda applikationen.
-
+### Usage:
+Start the application by running npm run dev
+Go to http://localhost:5173/ in your web browser to use the application.
